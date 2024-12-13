@@ -53,7 +53,6 @@ function App() {
         <Route path="/plantinfo" element={<PlantInfo />} />
         <Route path="/about" element={<About />} />
         <Route path="/quiz" element={<Quiz />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/explore" element={<Explore />} />
 

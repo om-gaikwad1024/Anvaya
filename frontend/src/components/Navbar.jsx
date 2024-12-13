@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 
 const navLinks = [
   { to: "/", label: "Home" },
-  { to: "/plants", label: "Plants" },
-  { to: "/identify", label: "Identify" },
+  { to: "/plantinfo", label: "Plants" },
+  { to: "/plantdetect", label: "Detect" },
   { to: "/about", label: "About Us" },
   { to: "/contact", label: "Contact Us" },
   { to: "/explore", label: "Explore" },
@@ -50,10 +50,11 @@ const Navbar = () => {
         {/* Buttons */}
         <div className="hidden md:flex gap-4">
           <button  className="bg-gray-700 px-4 py-2 rounded hover:bg-gray-600">
-            Login
+            <a href="/login">Login</a>
           </button>
           <button className="bg-orange-500 px-4 py-2 rounded hover:bg-orange-400">
-            Sign Up
+            
+            <a href="/register">Sign Up</a>
           </button>
         </div>
 
@@ -88,10 +89,10 @@ const Navbar = () => {
           </ul>
           <div className="mt-4 px-4 flex flex-col gap-4">
             <button className="bg-gray-700 px-4 py-2 rounded hover:bg-gray-600">
-              Login
+            <a href="/login">Login</a>
             </button>
             <button className="bg-orange-500 px-4 py-2 rounded hover:bg-orange-400">
-              Sign Up
+            <a href="/register">Sign Up</a>
             </button>
           </div>
         </div>

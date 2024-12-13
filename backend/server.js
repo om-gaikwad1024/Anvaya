@@ -1,18 +1,22 @@
 const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 5000;
 const cors = require('cors');
-app.use(cors());
+const connectDB = require('./config/database');
+require('dotenv').config();
+
+const app = express();
+
+// Connect Database
+connectDB();
 
 // Middleware
+app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-// Basic Route
-app.get('/', (req, res) => {
-  res.send('Backend is running!');
-});
+// Routes
+app.use('/api/users', require('./routes/authRoutes'));
+const PORT = process.env.PORT || 5000;
 
-// Start Server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
