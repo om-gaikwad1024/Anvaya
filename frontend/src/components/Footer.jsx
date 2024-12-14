@@ -6,10 +6,9 @@ const Footer = () => {
       <div className="footer-container">
         {/* Column 1 */}
         <div className="footer-column">
-          <h3 className="footer-title">About Us</h3>
+          <h3 className="footer-title">Anvaya</h3>
           <p>
-            Explore the wonders of the virtual garden! Your one-stop destination
-            for plant insights, gardening tips, and a vibrant community.
+          A world where you can wander through a lush, virtual garden, exploring the secrets of Ayurveda, Yoga, Unani, Siddha, and Homeopathy.
           </p>
         </div>
 
@@ -19,13 +18,13 @@ const Footer = () => {
           <a href="/home" className="footer-link">
             Home
           </a>
-          <a href="/about" className="footer-link">
-            About
+          <a href="/aboutus" className="footer-link">
+            About Us
           </a>
-          <a href="/services" className="footer-link">
-            Services
+          <a href="/explore" className="footer-link">
+            Explore
           </a>
-          <a href="/contact" className="footer-link">
+          <a href="/contactus" className="footer-link">
             Contact Us
           </a>
         </div>
@@ -44,7 +43,7 @@ const Footer = () => {
 
       <div>
         <p className="footer-copyright">
-          © 2024 Virtual Garden. All rights reserved.
+          © 2024 The Stoics. All rights reserved.
         </p>
       </div>
     </footer>
